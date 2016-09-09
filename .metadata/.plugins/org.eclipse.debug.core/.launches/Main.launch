@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/ConcurrencyTutorials/src/tuts/ThreadExample.java"/>
+<listEntry value="/ConcurrencyTutorials/src/tuts/Main.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="tuts.ThreadExample"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="tuts.Main"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ConcurrencyTutorials"/>
 </launchConfiguration>

@@ -1,0 +1,16 @@
+package tuts;
+
+
+public class ThreadExample {
+
+	class MyThread extends Thread {
+		public void run(){
+			System.out.println(String.format("Thread %s running", aStringVar));
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+}

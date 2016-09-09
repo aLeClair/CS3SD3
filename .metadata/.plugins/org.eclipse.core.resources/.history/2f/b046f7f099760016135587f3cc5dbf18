@@ -1,0 +1,16 @@
+package tuts;
+
+import java.lang.Runnable;
+
+public class MyThread {
+
+	class MyThread extends Thread {
+		public void run(){
+			System.out.println(String.format("%s running", this.getName()));
+		}
+	}
+	
+    public static void main(String args[]) {
+        (new Thread(new MyRunnable())).start();
+    }
+}

@@ -1,0 +1,14 @@
+package tuts;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyThread ex1 = new MyThread();
+		ex1.begin();
+		
+		MyRunnable ex2 = new MyRunnable();
+		ex2.begin();
+	}
+
+}

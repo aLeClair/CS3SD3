@@ -1,0 +1,20 @@
+package tuts;
+
+
+public class ThreadExample {
+
+	class MyThread extends Thread {
+		public void run(){
+			System.out.println(String.format("%s running", this.getId()));
+		}
+	}
+	
+	
+	
+	
+	public ThreadExample(){
+		Thread a = new MyThread();
+		a.run();
+	}
+
+}

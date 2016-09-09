@@ -1,0 +1,12 @@
+package tuts;
+
+import java.lang.Runnable;
+
+public class MyThread extends Thread{
+
+
+	
+    public static void main(String args[]) {
+        (new MyThread()).start();
+    }
+}
