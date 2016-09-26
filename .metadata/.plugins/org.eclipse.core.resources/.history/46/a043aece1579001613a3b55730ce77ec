@@ -1,0 +1,12 @@
+package tutorial1;
+
+public class MyThread extends Thread{
+	public void run(){
+		//Executable Code
+		System.out.println("Hello from a Thread!");
+	}
+	
+	public void begin(){
+		(new MyThread()).start();
+	}
+}

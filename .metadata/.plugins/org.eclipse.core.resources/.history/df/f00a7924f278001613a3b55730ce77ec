@@ -1,0 +1,9 @@
+package tutorial1;
+
+public class MyRunnable {
+
+	public void run(){
+		//Code to execute
+		System.out.println("Hello from a Runnable Thread!");
+	}
+}

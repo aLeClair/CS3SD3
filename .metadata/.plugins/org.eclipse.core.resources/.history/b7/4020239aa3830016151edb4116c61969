@@ -1,0 +1,74 @@
+package tutorial1;
+
+import java.util.concurrent.Semaphore;
+
+class numHydOxy{
+	private int numberH, numberO;
+	public numHydOxy(){
+		numberH = 0;
+		numberO = 0;
+	}
+	
+	public int getH(){
+		return numberH;
+	}
+	public void incH(){
+		numberH++;
+	}
+	
+	public int getO(){
+		return numberO;
+	}
+	public void incO(){
+		numberO++;
+	}
+}
+
+class Hydrogen implements Runnable{
+	public void run(){
+		synchronized (Water.numHydrogen, Water.numOxygen) {
+			Water.numHydrogen.release();
+			System.out.println("Hydrogen made!");
+			if((Water.numHydrogen.availablePermits() > 0) && (Water.numHydrogen.availablePermits() % 2 == 0) && (Water.numOxygen.availablePermits() > 0)){
+				Water.NUM_WATER--;
+			}
+		}
+		
+	}
+
+	public void begin(){
+		(new Thread(new MyRunnable())).start();
+	}
+}
+
+class Oxygen implements Runnable{
+	public void run(){
+		synchronized (Water.numOxygen){
+			Water.numOxygen.release();
+			System.out.println("Oxygen made!");
+		}
+	}
+
+	public void begin(){
+		(new Thread(new MyRunnable())).start();
+	}
+}
+
+
+public class Water {
+
+	public static int NUM_WATER = 20;
+	static numHydOxy num;
+    public static Semaphore numHydrogen, numOxygen;
+	
+	public Water(){
+		numHydrogen = new Semaphore(0);
+		numOxygen = new Semaphore(0);
+	}
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

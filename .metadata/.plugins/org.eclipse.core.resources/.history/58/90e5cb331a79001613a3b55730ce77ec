@@ -1,0 +1,5 @@
+package tutorial1;
+
+public class MyRunnable implements Runnable{
+
+}

@@ -1,0 +1,44 @@
+package tutorial1;
+
+import java.util.concurrent.Semaphore;
+
+public class Water {
+
+	public class Hydrogen implements Runnable{
+		public void run(){
+			//Executable Code
+			System.out.println("Hello from a Runnable THread");
+		}
+
+		public void begin(){
+			(new Thread(new MyRunnable())).start();
+		}
+	}
+	
+	public class Oxygen implements Runnable{
+		public void run(){
+			//Executable Code
+			System.out.println("Hello from a Runnable THread");
+		}
+
+		public void begin(){
+			(new Thread(new MyRunnable())).start();
+		}
+	}
+
+	public static Integer numberOfHydrogenElements;
+    public static Semaphore semaphoreHydrogen;
+    public static Semaphore semaphoreOxygen;
+	
+	public Water(){
+		numberOfHydrogenElements = new Integer(0);
+		semaphoreHydrogen = new Semaphore(0);
+		semaphoreOxygen = new Semaphore(0);
+	}
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
