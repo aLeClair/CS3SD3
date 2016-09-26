@@ -7,14 +7,6 @@ INDEX VERSION 1.127+/Users/Andrew/Desktop/CS3SD3/.metadata/.plugins/org.eclipse.
 1384487945.index
 272178059.index
 3302703152.index
-<<<<<<< HEAD
-=======
-1819685514.index
-1247459299.index
-1880139076.index
-156905802.index
-1104530127.index
->>>>>>> f83890ea6ff7fa9558864ec4a58731092128df96
 1833648217.index
 3954040986.index
 2545238116.index
