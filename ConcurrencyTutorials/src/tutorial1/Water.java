@@ -3,7 +3,7 @@ package tutorial1;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
-
+//This code is terrible, under revision
 class Hydrogen implements Runnable{
 	public void run(){
 		synchronized (Water.numOxygen){
